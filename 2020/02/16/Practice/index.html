@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Skylarhu">
+
+
+    <meta name="subtitle" content="Hi :)">
+
+
+    <meta name="description" content="What's in my mind?">
+
+
+
+<title>Media Specialist Practice | Skylar</title>
+
+
+
+    <link rel="icon" href="/favicon.png">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Skylar&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Skylar&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Media Specialist Practice</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Skylarhu</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">February 16, 2020&nbsp;&nbsp;16:34:55</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="MSP的课程记录"><a href="#MSP的课程记录" class="headerlink" title="MSP的课程记录"></a>MSP的课程记录</h1><h2 id="至今都学了啥"><a href="#至今都学了啥" class="headerlink" title="至今都学了啥"></a>至今都学了啥</h2><p>Persona<br>Storyboard<br>Chat box Design<br>Bootstrap4</p>
+<h2 id="Emotional-Design"><a href="#Emotional-Design" class="headerlink" title="Emotional Design"></a>Emotional Design</h2><ul>
+<li><p><strong>Why?</strong><br>Emotions drive &amp; affect attention<br>Emotions trigger &amp; motivate behaviour<br>Emotions affect memory<br>Emotions dominate decision-making</p>
+</li>
+<li><p><strong>What affecting emotions?</strong><br>Branding ｜ Visuals ｜ Interaction Design ｜ Storytelling</p>
+</li>
+<li><p><strong>Which emotions?</strong><br>Aesthetics 美学｜Fun 有趣｜Humour 幽默<br>Stimulating 刺激的｜Unpredictable 想不到的<br>Surprise 惊喜的｜scarcity 不足、缺乏｜playful 可玩性</p>
+</li>
+</ul>
+<h3 id="Negative-Emotions"><a href="#Negative-Emotions" class="headerlink" title="Negative Emotions"></a>Negative Emotions</h3><p>Emotions such as boredom | stress | loneliness | can trigger a desire for relief.</p>
+<p>The product becomes a habit and requires to find out about user’s internal triggers.<br>要让该产品成为一种习惯，需要找出用户的内部动机。</p>
+<h2 id="Topic"><a href="#Topic" class="headerlink" title="Topic"></a>Topic</h2><p>Knowledge to apply｜知识的应用</p>
+<ul>
+<li>知识（指某个理论吧）是什么？</li>
+<li>从哪来的？</li>
+</ul>
+<h2 id="Case-study"><a href="#Case-study" class="headerlink" title="Case study"></a>Case study</h2><p>这里的case study指的是什么有点疑惑🤔 大概猜测是指上课的时候老师举的那些案例，或者是叫我们自己找的那些应用程序的的案例。<br>例举有参考价值的：<a href="https://www.tesla.com/" target="_blank" rel="noopener">Tesla官网</a> ｜ <a href="https://mailchimp.com/" target="_blank" rel="noopener">Mailchimp</a><br>确定用户、任务、技术、使用环境和标准<br>你会将知识应用到哪些内容中？</p>
+<ul>
+<li>这个案例学习的目的是什么：（要填）</li>
+</ul>
+<h3 id="Case-Study-Research-Tips"><a href="#Case-Study-Research-Tips" class="headerlink" title="Case Study Research Tips"></a>Case Study Research Tips</h3><ol>
+<li><p>Media Specialist Practice coursework projects should be narrower scope than Ux(Systems) or Ux(Content).<br>Focus upon one technique or one page, rather than a complete development process or meaningful product.</p>
+</li>
+<li><p>Your Knowledge Base：If the named, defined and delimited knowledge source does not exist, then create your own by pulling together contributions from the literature.</p>
+</li>
+</ol>
+<h2 id="Research"><a href="#Research" class="headerlink" title="Research"></a>Research</h2><p><a href="https://www.tmtpost.com/3951609.html" target="_blank" rel="noopener">博物馆纷纷成为“网红”，但代价是什么呢？</a></p>
+<blockquote>
+<p>虽然App已经成了国内博物馆的“标配“，然而在App的探索实验、表现形式上各家却都已经意兴阑珊，仅仅是“数字化政绩工程”的一部分而已。不仅如此，随着近几年来公众对于App这种需要主动下载、探索的形式兴趣下降，投入与产出越来越难成正比。</p>
+</blockquote>
+<blockquote>
+<p>App这种高投入、重运营、强推广、弱传播的形式，既难以承载公众对于文物精深了解的需求，也无法帮助博物馆实现更大范围的传播。<br>在追求专业深度和大众娱乐的两个维度上，国内博物馆在近几年都纷纷开始了新的探索。</p>
+</blockquote>
+<blockquote>
+<p>正是这样的“游戏化”让《风景与艺术》超越了线下展览短短几个月的生命周期，用户不绝如缕，也数次得到App Store的推荐。然而这样成功拉长展期的线上展览寥寥无几，无论是上博还是其他博物馆的临展App，在展览结束之后往往都无人问津。</p>
+</blockquote>
+<blockquote>
+<p>在线下展厅中，由于空间所限，藏品的信息往往粗疏简陋，仅限于名称、材质、年代、大小、简单外观等信息，即使现在已经可以通过扫描二维码了解更多，但因为观展时间所限，因为文字信息的局限性，不可能对于一件藏品的信息作更为深入的“挖掘”。博物馆既应该照顾到观展用户即时了解的需求，也有义务更为全面深入地介绍藏品信息，满足用户进一步深度学习的需求，网站就是一个更好的载体。</p>
+</blockquote>
+<blockquote>
+<p>在“网红展”和“网红博物馆”的刺激之下，传统博物馆也不得不做出应对甚至蠢蠢欲动。问题在于出于文物保护需要对于拍照的限制，以及拍照对于其他观展者的影响，都意味着以文物收藏为主的博物馆，并不能全然拥抱“网红展”时代，而且有研究表明，在观展过程中拍照并社交分享，将会破坏欣赏的体验。</p>
+</blockquote>
+<p><a href="https://www.tmtpost.com/4176374.html" target="_blank" rel="noopener">虚幻与真实：博物馆的XR探索</a></p>
+<blockquote>
+<p>自从1916年，吉尔曼创造了一个词汇——博物馆疲劳，此后，参观博物馆时感到身心疲惫的现象，就引发了无数研究者的关注。可以说，博物馆的每一次自我变革，都是围绕着这个核心痛点展开的。</p>
+</blockquote>
+<blockquote>
+<p>我们知道，游览博物馆可以很简单，带上证件，拨开展柜前的人群，看，就好了。但这其中却存在着许多别别扭扭的难言之隐。比如在博物馆游览时，即使努力地集中精神，也很容易感到疲惫、无聊；又或是场馆规模太大，走到脚底板痛得不是自己的也看不完；走马观花看完展一件东西只能分配到十秒不到的时间，走出展馆总会不自觉地化身哲学家，发出“我是谁我在哪儿”的天问……</p>
+</blockquote>
+<blockquote>
+<p>如果你有这种感觉，可能并不是自己缺乏艺术细胞，或者知识储备不足、觉悟不够高之类的，很可能只是和大多数人一样，由于不得不气喘吁吁地穿梭于各个展墙之间，患上了“博物馆疲劳症”Museum fatigue。</p>
+</blockquote>
+<p>有用🔗：</p>
+<p><a href="https://www.the-uma.org/" target="_blank" rel="noopener">UNIVERSAL MUSEUM OF ART</a></p>
+<p><a href="https://books.google.co.uk/books?id=EtBeDwAAQBAJ&pg=PT264&lpg=PT264&dq=%E7%BA%BF%E4%B8%8A%E5%8D%9A%E7%89%A9%E9%A6%86&source=bl&ots=vFQ-wW9_7I&sig=ACfU3U3LjCMpbx7WfKKWNtCB3oIC2l1a4w&hl=en&sa=X&ved=2ahUKEwj6zvmJ79bnAhUZShUIHZsWByQQ6AEwCXoECAoQAQ#v=onepage&q=%E7%BA%BF%E4%B8%8A%E5%8D%9A%E7%89%A9%E9%A6%86&f=false" target="_blank" rel="noopener">智慧文博：高校博物馆理论与实践</a></p>
+<p><a href="https://www.tmtpost.com/tag/3887414" target="_blank" rel="noopener">硬核博物馆：艺术被科技重新定义</a></p>
+<h2 id="Ideation"><a href="#Ideation" class="headerlink" title="Ideation"></a>Ideation</h2><p>既然是针对某一个点进行设计的话，那么我自己的想法应该是集中在游戏化上？<br>线上博物馆？<br>用户：前来参观的人</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Skylarhu</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://skylarhu.com/2020/02/16/Practice/">http://skylarhu.com/2020/02/16/Practice/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY</strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Notes/"># Notes</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2020/02/14/2020.02.13%20hexo/">创建Hexo博客记录</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Skylarhu | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
