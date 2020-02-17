@@ -196,9 +196,9 @@
 
         <div class="post-content">
             <h2 id="创建Hexo博客记录"><a href="#创建Hexo博客记录" class="headerlink" title="创建Hexo博客记录"></a>创建Hexo博客记录</h2><p>瞎倒腾了几天hexo，今天终于成功上线可以访问了。作为完全不懂代码的小白，只能参考网上文档各种试错，但有些情况还是不太一样。这里整理一些有用的经验，以便以后参考。btw使用的是Mac系统。</p>
-<h4 id="大致流程"><a href="#大致流程" class="headerlink" title="大致流程"></a>大致流程</h4><h5 id="安装Node-js-→"><a href="#安装Node-js-→" class="headerlink" title="安装Node.js →"></a>安装Node.js →</h5><p>官网链接：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">点击访问</a>， 下载 MacOS 版本进行安装<br>然后运行：<br><code>sudo npm i -g npm</code><br>来安装Npm，npm 是 node 的包管理器</p>
-<h5 id="安装Git-→"><a href="#安装Git-→" class="headerlink" title="安装Git →"></a>安装Git →</h5><p>如果安装过 X-Code 的话，git 是包括在里面的<br>可以直接执行命令行安装：<br><code>brew install git</code></p>
-<h5 id="安装和初始化Hexo-→"><a href="#安装和初始化Hexo-→" class="headerlink" title="安装和初始化Hexo →"></a>安装和初始化Hexo →</h5><ul>
+<h3 id="大致流程"><a href="#大致流程" class="headerlink" title="大致流程"></a>大致流程</h3><h4 id="安装Node-js-→"><a href="#安装Node-js-→" class="headerlink" title="安装Node.js →"></a>安装Node.js →</h4><p>官网链接：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">点击访问</a>， 下载 MacOS 版本进行安装<br>然后运行：<br><code>sudo npm i -g npm</code><br>来安装Npm，npm 是 node 的包管理器</p>
+<h4 id="安装Git-→"><a href="#安装Git-→" class="headerlink" title="安装Git →"></a>安装Git →</h4><p>如果安装过 X-Code 的话，git 是包括在里面的<br>可以直接执行命令行安装：<br><code>brew install git</code></p>
+<h4 id="安装和初始化Hexo-→"><a href="#安装和初始化Hexo-→" class="headerlink" title="安装和初始化Hexo →"></a>安装和初始化Hexo →</h4><ul>
 <li><p>在Terminal执行以下代码：<br><code>npm install -g hexo-cli</code></p>
 <p>-g 用以全局安装</p>
 </li>
@@ -211,7 +211,7 @@
 <li><p>在这个路径开始 Hexo 的初始化：<br><code>hexo init</code></p>
 </li>
 </ul>
-<h5 id="本地测试运行-→"><a href="#本地测试运行-→" class="headerlink" title="本地测试运行 →"></a>本地测试运行 →</h5><p>启动 Hexo 的本地服务器：<br><code>hexo server</code><br><code>hexo s</code> 也可</p>
+<h4 id="本地测试运行-→"><a href="#本地测试运行-→" class="headerlink" title="本地测试运行 →"></a>本地测试运行 →</h4><p>启动 Hexo 的本地服务器：<br><code>hexo server</code><br><code>hexo s</code> 也可</p>
 <p>访问本地 Hexo 博客：<br>不要关闭终端，在浏览器输入：localhost:4000</p>
 <p>只有一篇 Hello World 文章，这是 Hexo 初始化的，里面包含了基础的操作</p>
 <p>停止运行本地服务器：Ctrl+C</p>
@@ -219,14 +219,22 @@
 <p>本地服务器预览：<br><code>hexo g</code><br><code>hexo d</code><br><code>hexo s</code></p>
 <p>创建新文章：<br><code>hexo new</code> 标题<br>文章在_posts 当中，是md格式的文件，在第5行代码 “—” 之后开始编辑文章内容</p>
 <p>生成文章：<br><code>hexo generate</code></p>
-<h5 id="部署-→"><a href="#部署-→" class="headerlink" title="部署 →"></a>部署 →</h5><p>注册github或coding<br>创建pages仓库</p>
-<h5 id="个性化域名-→"><a href="#个性化域名-→" class="headerlink" title="个性化域名 →"></a>个性化域名 →</h5><p>首先买域名<br>域名解析处添加三条记录：<br><img src="/Users/skylar/blog/source/img" alt="img_dns.png"></p>
+<h4 id="部署-→"><a href="#部署-→" class="headerlink" title="部署 →"></a>部署 →</h4><p>注册github或coding<br>创建pages仓库</p>
+<h4 id="个性化域名-→"><a href="#个性化域名-→" class="headerlink" title="个性化域名 →"></a>个性化域名 →</h4><p>首先买域名<br>域名解析处添加三条记录：<br><img src="/Users/skylar/blog/source/img" alt="img_dns.png"></p>
 <ul>
 <li>to create an A record, point your apex domain to the IP addresses for GitHub Pages.<br>185.199.108.153<br>185.199.109.153<br>185.199.110.153<br>185.199.111.153</li>
 </ul>
 <p>接下来在Terminal操作:<br><code>cd 你的hexo本地目录</code><br><code>cd source</code><br>创建CNAME文件：<br><code>touch CNAME</code><br>打开并编辑：<br><code>open CNAME</code><br>在打开的记事本文件填入域名<br>这里填www的话以后访问就必须输入www才行，不填就加不加都可以访问</p>
 <p>回到你的hexo本地目录:<br><code>cd ../</code><br>重新生成部署:<br><code>hexo g -d</code></p>
-<h5 id="安装主题-→"><a href="#安装主题-→" class="headerlink" title="安装主题 →"></a>安装主题 →</h5><p>现用主题Chic<br>修改主题在配置文件里更改代码<br>装复杂的主题插件有问题<br>目前解决不了这些bug</p>
+<h4 id="安装主题-→"><a href="#安装主题-→" class="headerlink" title="安装主题 →"></a>安装主题 →</h4><p>现用主题Chic<br>修改主题在配置文件里更改代码<br>装复杂的主题插件有问题<br>目前解决不了这些bug</p>
+<h3 id="修改主题内容-→"><a href="#修改主题内容-→" class="headerlink" title="修改主题内容 →"></a>修改主题内容 →</h3><p><strong>menu</strong></p>
+<ul>
+<li>菜单配置包括三个部分，第一是菜单项（名称和链接），第二是菜单项的显示文本，第三是菜单项对应的图标</li>
+<li>在设置 菜单项的名称和链接 中的名称并不会直接显示在网页上，而是会通过主题目录下的 languages/{language}.yml 找到对应的显示文本。</li>
+</ul>
+<p>生成菜单文件夹:<br><code>hexo new page tags</code></p>
+<p>将 source/tags/index.md 的内容修改为如下：</p>
+<p><code>---</code><br><code>date: 2017-07-10 16:36:26</code><br><code>type: &quot;tags&quot;</code><br><code>comments: false</code><br><code>---</code></p>
 
         </div>
 
