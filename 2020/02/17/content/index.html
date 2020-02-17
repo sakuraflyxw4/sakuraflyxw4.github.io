@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Skylarhu">
+
+
+    <meta name="subtitle" content="Hi :)">
+
+
+    <meta name="description" content="What's in my mind?">
+
+
+
+<title>content | Skylar</title>
+
+
+
+    <link rel="icon" href="/favicon.png">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Skylar&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Skylar&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">content</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Skylarhu</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">February 17, 2020&nbsp;&nbsp;16:28:38</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>按照脉络梳理一下uxd content这个课的内容。<br>早上的课实际上也是对理论的知识补充，但马丁讲课实在是听不下去，都拿来研究别人的网站和hexo了。下午的workshop都是按照一定的设计程序进行的，感觉还不错。</p>
+<h2 id="Empathise"><a href="#Empathise" class="headerlink" title="Empathise"></a>Empathise</h2><h3 id="1-Data-Collection"><a href="#1-Data-Collection" class="headerlink" title="1 Data Collection"></a>1 Data Collection</h3><p>Project objective:<br>•    to gather information about how family and friends actually rendezvous / informally arrange to meet up, to support the design of an innovative app.<br>Learning objective:<br>•    to understand diary studies as a data collection technique;</p>
+<p>•收集关于家人和朋友如何实际见面/非正式安排见面的信息，以支持创新应用程序的设计。<br>•将日记研究理解为一种数据收集技术;</p>
+<h3 id="2-Empathy-Mapping-amp-Vision"><a href="#2-Empathy-Mapping-amp-Vision" class="headerlink" title="2 Empathy Mapping &amp; Vision"></a>2 Empathy Mapping &amp; Vision</h3><p>Go through the slide decks one by one, and then write a sticky note that captures some aspect of what the user ‘says’, ‘thinks’, ‘feels’ or ‘does’, and add the sticky note to the map.<br>一个接一个地浏览幻灯片，然后写一张便利贴，捕捉用户“说”、“想”、“感觉”或“做”的某些方面，并将便利贴添加到map上。<br><img src="https://media.nngroup.com/media/editor/2017/12/14/screen-shot-2017-12-14-at-55525-pm.png" alt=""></p>
+<p>Pulling all the diary entries and empathy maps together, create a suitable story for guiding the overall design of an innovative app or services that utilises Personal Ubiquitous Computing.  This story captures your vision of the future from the user’s point of view.<br>把所有的日记条目和同理心地图放在一起，创建一个合适的故事来指导利用创新应用程序或服务的整体设计。这个故事从用户的角度捕捉您对未来的愿景。</p>
+<p><strong>GIVE YOUR GROUP A NAME THAT REFLECTS THIS STORY.<br>给你的小组起一个反映这个故事的名字。</strong></p>
+<h3 id="3-Thematic-Coding-and-Analysis"><a href="#3-Thematic-Coding-and-Analysis" class="headerlink" title="3 Thematic Coding and Analysis"></a>3 Thematic Coding and Analysis</h3><p>Project objective:<br>•    to interpret and synthesise qualitative data to generate insight, and agreement, and support design.   To find a new perspective – a new framework for interpretation<br>Learning objective:<br>•    to understand thematic coding and thematic analysis ;</p>
+<p>•解释和综合定性数据，以产生洞察力、一致性和支持设计。寻找一个新的视角——一个新的解释框架<br>•理解主题编码和主题分析;</p>
+<hr>
+<p>As you read, colour-code the text and/or post-its according to the ‘emerging’ themes.当你阅读的时候，根据“正在出现的”主题，给文章和/或便笺贴上颜色代码。</p>
+<p>当你聚在一起，阅读越来越多的约会故事时，将颜色编码的想法细分并重新分组，以反映你正在形成的分析框架(用于解释故事集合的高级概念)。这个框架可能包含一些新的、有洞察力的概念，而您以前并不知道这些概念是非常重要的。它们反映了你的发现。</p>
+<p>举个例子，也许你一开始并没有意识到“约会者”对见面可能有非常不同的“态度”——有些是非常体贴和积极的沟通者，有些则不然。有些人看重守时，有些人不介意等待。“对守时的态度”将是一个发现。</p>
+<blockquote>
+<p>As you learn to see/act/think/feel the world as other people do, do you want to change your vision for the future?当你学着像别人一样看/做/想/感觉这个世界的时候，你想改变你对未来的看法吗?</p>
+</blockquote>
+<p>Revisit your idea from yesterday, critically review it from the light of your new perspective, and change it if you need to. 重新审视你的想法，从新的角度对它进行批判性的回顾，如果需要的话，改变它。</p>
+<h3 id="4-Write-a-Design-Story"><a href="#4-Write-a-Design-Story" class="headerlink" title="4 Write a Design Story"></a>4 Write a Design Story</h3><p>Referring to all the diary entries, empathy maps, and analytical frameworks together, create a suitable story for guiding the design of an innovative app or services that utilises Personal Ubiquitous Computing.<br>参考所有的日记、同理心地图和分析框架，创建一个合适的故事来指导创新应用程序或服务的设计。</p>
+<h2 id="Define"><a href="#Define" class="headerlink" title="Define"></a>Define</h2><h3 id="5-Personas-and-User-Journeys"><a href="#5-Personas-and-User-Journeys" class="headerlink" title="5 Personas and User Journeys"></a>5 Personas and User Journeys</h3><p>Project objective:<br>•    to focus the project on a defined kind of user, in the context of a defined user journey.<br> Learning objective:<br>•    to understand, and critically appraise, the idea of user journey, and user journey diagramming;</p>
+<p>•在定义用户旅程的上下文中，将项目聚焦于定义的用户类型。<br>•理解并批判性评价用户旅程的概念和用户旅程图;</p>
+<ol>
+<li>Outline a persona</li>
+<li>Map a User Journey<ul>
+<li>User Journey tool:<br><a href="https://uxpressia.com/w/s2euS" target="_blank" rel="noopener">uxpressia</a></li>
+</ul>
+</li>
+</ol>
+<h2 id="Ideate"><a href="#Ideate" class="headerlink" title="Ideate"></a>Ideate</h2><h3 id="6-Writing-Epics"><a href="#6-Writing-Epics" class="headerlink" title="6 Writing Epics"></a>6 Writing Epics</h3><p>Discovering and articulating a meaningful challenge is a key responsibility of the designer.<br>Design Targets statements serve to focus ideation (brainstorming) and capture your design vision.<br>发现和表达一个有意义的挑战是设计者的一个关键责任。<br>设计目标陈述有助于集中思想(头脑风暴)并捕获您的设计愿景。<br><strong>Format 1:  [USER] needs to [USER’S NEED] because [SURPRISING INSIGHT]</strong><br><strong>Format 2:  As a [USER], I want to [USER TASK], so that [PURPOSE or MOTIVATION]</strong></p>
+<h3 id="7-Brainstorming"><a href="#7-Brainstorming" class="headerlink" title="7 Brainstorming"></a>7 Brainstorming</h3><p>参考workshop记录：<br>中国会怎么做<br>苹果公司会怎么做<br>谷歌会怎么做<br>特朗普会怎么做<br>哈利波特会怎么做<br>event brie会怎么做<br>。。。</p>
+<h3 id="8-Adopt-a-Competitor"><a href="#8-Adopt-a-Competitor" class="headerlink" title="8 Adopt a Competitor"></a>8 Adopt a Competitor</h3><p>What are their relative strengths and weaknesses in terms of features, usage, experience?  Which ones are leading?<br>它们在功能、使用和体验方面的相对优势和劣势是什么?哪些国家领先?</p>
+<h2 id="Prototype-and-Test"><a href="#Prototype-and-Test" class="headerlink" title="Prototype and Test"></a>Prototype and Test</h2><h3 id="9-Paper-Prototype-and-OnDevice-Rough-Mockup"><a href="#9-Paper-Prototype-and-OnDevice-Rough-Mockup" class="headerlink" title="9 Paper Prototype and OnDevice Rough Mockup"></a>9 Paper Prototype and OnDevice Rough Mockup</h3>
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Skylarhu</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://skylarhu.com/2020/02/17/content/">http://skylarhu.com/2020/02/17/content/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span><strong>SKYLAR</strong></span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Notes/"># Notes</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2020/02/17/HTML/">HTML</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Skylarhu | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
