@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Skylarhu">
+
+
+    <meta name="subtitle" content="Hi :)">
+
+
+    <meta name="description" content="What's in my mind?">
+
+
+
+<title>Gamification | Skylar</title>
+
+
+
+    <link rel="icon" href="/favicon.png">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Skylar&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Skylar&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Gamification</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Skylarhu</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">February 21, 2020&nbsp;&nbsp;16:11:26</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="游戏化-Gamification-笔记1"><a href="#游戏化-Gamification-笔记1" class="headerlink" title="游戏化 Gamification 笔记1"></a>游戏化 Gamification 笔记1</h1><p>在非游戏目的的用户界面中使用游戏元素和行为，以影响用户行为、提高动机和提高参与度，从而使用户体验具有游戏性质和‘乐趣’。</p>
+<p>游戏元素和设计技术用于实现非游戏目标;<br>游戏说明:对自己行为的满意，与结果无关;<br>释放或解除与临时转移到一个替代的、更简单的系统相关联的;<br>更丰富、更全面的互动;游戏和游戏化应用程序之间的区别可能很微妙:游戏可能具有重要的教育或其他价值;<br>和“游戏化”(严肃的)活动可以是非常愉快的(感觉像游戏);</p>
+<p>不仅仅是为了玩起来有趣而创造一个游戏<br>不仅仅是在应用程序中包含游戏<br>不是模拟器：让用户沉浸在虚拟世界中，实践真实的行为</p>
+<h2 id="why-为什么要游戏化？"><a href="#why-为什么要游戏化？" class="headerlink" title="why? 为什么要游戏化？"></a>why? 为什么要游戏化？</h2><p>generate engagement and loyalty to the organization<br>激励个人;<br>将产品或服务与其他同类产品或服务区分开来;<br>并对组织及其产品或信息更投入和忠诚。</p>
+<h2 id="游戏化的局限？"><a href="#游戏化的局限？" class="headerlink" title="游戏化的局限？"></a>游戏化的局限？</h2><p>Games = voluntarily overcoming unnecessary obstacles<br>游戏=自愿克服不必要的障碍<br>Generalise ‘known’ problems and solutions from offline to online applications<br>将“已知的”问题和解决方案从离线应用程序概括到在线应用程序<br>销售、参与、行为改变：登记、贡献、回应</p>
+<h2 id="Needs-and-Rewards-需求和回报"><a href="#Needs-and-Rewards-需求和回报" class="headerlink" title="Needs and Rewards 需求和回报"></a>Needs and Rewards 需求和回报</h2><p>Hierarchy of Needs (Maslow)<br>Two Factor Theory (Herzberg)</p>
+<ol>
+<li><p>赫兹伯格-双因素激励理论</p>
+<p>第一类因素是激励因素，包括工作本身、认可、成就和责任，这些因素涉及对工作的积极感情，又和工作本身的内容有关。这些积极感情和个人过去的成就，被人认可以及担负过的责任有关，它们的基础在于工作环境中持久的而不是短暂的成就。</p>
+<p>第二类因素是保健因素，包括公司政策和管理、技术监督、薪水、工作条件以及人际关系等。这些因素涉及工作的消极因素，也与工作的氛围和环境有关。也就是说，对工作和工作本身而言，这些因素是外在的，而激励因素是内在的，或者说是与工作相联系的内在因素。</p>
+</li>
+<li><p>Physiology  生理机能</p>
+<p>活动的完成会得到化学反应(多巴胺)的奖励。 对奖励的期望(期待)足以提前释放多巴胺。<br>reward (anticipation)  n. 预料，预期；预感；预知；盼望，希望；先发制人<br>Anticipation is half the fun!   期待是一半的乐趣!</p>
+</li>
+<li><p>Motivation to Do Something 做事的动机</p>
+</li>
+</ol>
+<ul>
+<li><strong>Completing Task Lists</strong></li>
+<li><strong>Habit Formation</strong>：individuals are motivated to continue activities which have been rewarded / 巴普洛夫的狗</li>
+<li><strong>Competition</strong>：When performance is defined relative to a peer , individuals will be motivated to ‘manage it’</li>
+<li><strong>Progression</strong>：当面对“等级”，或获得“徽章”时，个人可能会更有动力去追求更高的成就。奖励可以是游戏固有的(游戏本身的一部分-参见定义)。解锁新功能就是一个例子</li>
+<li><strong>Differentiation</strong>：每个人都会很自然地将有趣的活动区分开来，并被吸引。好奇心和兴趣</li>
+<li><strong>Loyalty</strong>： Individuals who believe that one activity fits into a broader set of recurring or similar activities tend to engage longer and more frequently</li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Skylarhu</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://skylarhu.com/2020/02/21/Gamification/">http://skylarhu.com/2020/02/21/Gamification/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span><strong>SKYLAR</strong></span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Notes/"># Notes</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2020/02/21/Gamification2/">Gamification2</a>
+            
+            
+            <a class="next" rel="next" href="/2020/02/17/content/">content</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Skylarhu | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>

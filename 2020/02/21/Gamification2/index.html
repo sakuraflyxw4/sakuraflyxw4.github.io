@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Skylarhu">
+
+
+    <meta name="subtitle" content="Hi :)">
+
+
+    <meta name="description" content="What's in my mind?">
+
+
+
+<title>Gamification2 | Skylar</title>
+
+
+
+    <link rel="icon" href="/favicon.png">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Skylar&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Skylar&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Gamification2</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Skylarhu</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">February 21, 2020&nbsp;&nbsp;16:17:20</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="游戏化-Gamification-笔记2"><a href="#游戏化-Gamification-笔记2" class="headerlink" title="游戏化 Gamification 笔记2"></a>游戏化 Gamification 笔记2</h1><blockquote>
+<p>Playing a game is the voluntary attempt to overcome unecessary obstacles — Bernard Suits</p>
+</blockquote>
+<h2 id="User-Progression-用户进程"><a href="#User-Progression-用户进程" class="headerlink" title="User Progression 用户进程"></a>User Progression 用户进程</h2><p>归纳-最初的活动被简化，以帮助个人学习基本的机制、规则和目标。例如，减少或限制选择——只有一条路可走，几乎没有选择。<br>沉浸-增加难度和奖励之间的距离，以降低退出率(太容易或太难)<br>完成/掌握-可能是有限的(故事结束)或无限的(不同的组合)用户进程</p>
+<p>Users role: the ‘<strong>Player</strong>’</p>
+<ul>
+<li>Players are empowered to make choices and control outcomes.</li>
+<li>To make the user a player</li>
+</ul>
+<h2 id="Fun-elements-有趣的元素"><a href="#Fun-elements-有趣的元素" class="headerlink" title="Fun elements 有趣的元素"></a>Fun elements 有趣的元素</h2><ul>
+<li>解决问题：问题的提出激发了内在的解决问题的欲望</li>
+<li>分享及合作活动</li>
+<li>探索、发现</li>
+<li>收集</li>
+</ul>
+<p>Give participants one item ‘free’ to start with, and they are more likely to continue that if they start completely ‘empty’ set<br>Providing a Pay-off or Reward：<br>为了使效果最大化，奖励应该是:正确的 立即的<br>包括一些随机因素，例如，所期望的行为是奖励的2 - 3倍，而不是每次适量——足够但不要太多。<br>注意，对回报的期望不能取代参与活动的内在回报。</p>
+<p><strong>Game Architecture</strong><br>叙述故事进程的使用有助于完整地组织<br>并将个体的活动沉浸到游戏的概念中<br>据说有七种基本的叙述方式。<br>通常反复出现的修辞结构会使读者通读整个故事。</p>
+<p><strong>Maps/Boards</strong><br>表现层将个人提升到游戏范式中。个人帮助的参考点说明了他们来自哪里和他们需要去哪里。信息表示结构，或作为辅助表示映射，通常位于主信息表示窗口的一侧。</p>
+<p><strong>How？</strong></p>
+<ul>
+<li>Align real-world goals with the game<ul>
+<li>Specific, discrete</li>
+</ul>
+</li>
+<li>Structure the game<ul>
+<li>Narrative</li>
+<li>Map/Board</li>
+</ul>
+</li>
+<li>Rules<ul>
+<li>What choices do players have?</li>
+<li>Complexity vs simplicity</li>
+</ul>
+</li>
+<li>Structure the gaming mechanisms<ul>
+<li>competition</li>
+<li>sharing</li>
+<li>Progression and levels</li>
+</ul>
+</li>
+<li>Select and structure rewards<ul>
+<li>Real or virtual? Balance between getting started and completion<br>将现实世界的目标与游戏结合起来，具体的、离散的结构，游戏叙述，地图/板，规则，玩家有什么选择?复杂性与简单，构建博弈机制，竞争，分享，进展和水平选择并组织，奖励真实还是虚拟?开始和完成之间的平衡</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Skylarhu</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://skylarhu.com/2020/02/21/Gamification2/">http://skylarhu.com/2020/02/21/Gamification2/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span><strong>SKYLAR</strong></span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/Notes/"># Notes</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2020/02/21/Gamification/">Gamification</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Skylarhu | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
