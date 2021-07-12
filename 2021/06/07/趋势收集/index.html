@@ -16,7 +16,7 @@
 
 
 
-<title>Mar. to May. review | Skylar</title>
+<title>行业趋势收集（2021.7） | Skylar</title>
 
 
 
@@ -111,11 +111,73 @@
             <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Mar. to May. review</h1>
+            <h1 class="post-title">行业趋势收集（2021.7）</h1>
             
                 <div class="post-meta">
                     
@@ -133,7 +195,11 @@
         </header>
 
         <div class="post-content">
-            
+            <h2 id="家电市场"><a href="#家电市场" class="headerlink" title="家电市场"></a>家电市场</h2><p>家电市场周度要闻扫读 | 2021年第23周<br><a href="https://mp.weixin.qq.com/s/mtfnL7VJVzXdoseA6NSnLQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/mtfnL7VJVzXdoseA6NSnLQ</a><br>看开机广告，都是为你好？<br><a href="https://mp.weixin.qq.com/s/T2o4aHO0IFaqSiUtEvzAgg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/T2o4aHO0IFaqSiUtEvzAgg</a></p>
+<h2 id="时尚类"><a href="#时尚类" class="headerlink" title="时尚类"></a>时尚类</h2><p>【共享衣橱】兴起，服饰租赁能否成为未来趋势？<br><a href="https://mp.weixin.qq.com/s/59iVQMMha9-rPpVtQShbiw" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/59iVQMMha9-rPpVtQShbiw</a></p>
+<h2 id="互联网"><a href="#互联网" class="headerlink" title="互联网"></a>互联网</h2><h2 id="科技"><a href="#科技" class="headerlink" title="科技"></a>科技</h2><p>华为发布 MatePad 11，搭载鸿蒙 / iPhone 13 Pro 保护壳曝光 / Switch OLED 版发布<br><a href="https://mp.weixin.qq.com/s/-lE4U3Zx-XctZKBveP8cGA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/-lE4U3Zx-XctZKBveP8cGA</a></p>
+<p>全面屏 iPad mini 或秋季发布 / 维珍银河创始人开启太空之旅 / 刘慈欣宣布加入商汤科技<br><a href="https://mp.weixin.qq.com/s/JPIDyjGQz1F_BII7zTpdOA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/JPIDyjGQz1F_BII7zTpdOA</a></p>
+
         </div>
 
         
@@ -147,7 +213,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://skylarhu.com/2021/06/07/review/">http://skylarhu.com/2021/06/07/review/</a></span>
+                        <span><a href="http://skylarhu.com/2021/06/07/%E8%B6%8B%E5%8A%BF%E6%94%B6%E9%9B%86/">http://skylarhu.com/2021/06/07/%E8%B6%8B%E5%8A%BF%E6%94%B6%E9%9B%86/</a></span>
                     </p>
                 
                 
